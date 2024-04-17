@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "push-latency-tests"
+version = "0.1.0"
+description = ""
+authors = ["Nathan Alderson <me@nathanalderson.com>"]
+readme = "README.md"
+packages = [{ include = "push_latency_tests" }]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+typer = "^0.12.3"
+rich = "^13.7.1"
+aiohttp = "^3.9.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+app = 'push_latency_tests.main:app'
